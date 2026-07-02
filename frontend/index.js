@@ -9,7 +9,7 @@ updateCartCount();
 
 // Fetch products from the backend
 function loadStore() {
-    fetch("http://localhost:3000/api/products")
+    fetch("/api/products")
         .then(response => response.json())
         .then(data => {
             allProducts = data; // Save the data to our global array
